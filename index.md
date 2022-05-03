@@ -3,7 +3,7 @@ layout: page
 show_title: false
 banner:
   collection: collection1
-  pid: obj10
+  pid: obj14
   y: 25%
   height: '500px'
 ---
