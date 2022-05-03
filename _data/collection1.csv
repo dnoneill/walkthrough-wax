@@ -1,3 +1,3 @@
 pid,artist,location,label,_date,object_type,test_field,current_location,source,order,layout,collection,thumbnail,manifest,full
-obj14,,,Item 1,,image,test1,,,0,generic_collection_item,test,,,
-obj15,,,Item 2,,poster,test2,,,1,generic_collection_item,test,,,
+obj14,,,Item 1,,image,test1,,,0,generic_collection_item,collection1,"/img/derivatives/iiif/images/obj14/full/250,/0/default.jpg",/img/derivatives/iiif/obj14/manifest.json,"/img/derivatives/iiif/images/obj14/full/1140,/0/default.jpg"
+obj15,,,Item 2,,poster,test2,,,1,generic_collection_item,collection1,"/img/derivatives/iiif/images/obj15_0/full/250,/0/default.jpg",/img/derivatives/iiif/obj15/manifest.json,"/img/derivatives/iiif/images/obj15_0/full/1140,/0/default.jpg"

@@ -1,0 +1,37 @@
+---
+layout: none
+---
+[
+  {
+    "pid": "obj14",
+    "artist": null,
+    "location": null,
+    "label": "Item 1",
+    "_date": null,
+    "object_type": "image",
+    "test_field": "test1",
+    "current_location": null,
+    "source": null,
+    "collection": "collection1",
+    "thumbnail": "/img/derivatives/iiif/images/obj14/full/250,/0/default.jpg",
+    "manifest": "/img/derivatives/iiif/obj14/manifest.json",
+    "permalink": "/collection1/obj14",
+    "lunr_id": 0
+  },
+  {
+    "pid": "obj15",
+    "artist": null,
+    "location": null,
+    "label": "Item 2",
+    "_date": null,
+    "object_type": "poster",
+    "test_field": "test2",
+    "current_location": null,
+    "source": null,
+    "collection": "collection1",
+    "thumbnail": "/img/derivatives/iiif/images/obj15_0/full/250,/0/default.jpg",
+    "manifest": "/img/derivatives/iiif/obj15/manifest.json",
+    "permalink": "/collection1/obj15",
+    "lunr_id": 1
+  }
+]
