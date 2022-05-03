@@ -2,6 +2,12 @@ collections:
   annotations:
     output: true
     permalink: /annotations/:name
+  collection1:
+    images:
+      source: raw_images/collection1
+    metadata:
+      source: collection1.csv
+    output: true
   exhibits:
     output: true
   qatar:
@@ -66,6 +72,18 @@ sass:
 search:
   main:
     collections:
+      collection1:
+        content: false
+        fields:
+        - artist
+        - location
+        - label
+        - _date
+        - object_type
+        - test_field
+        - current_location
+        - source
+        - manifest
       qatar:
         content: false
         fields:
