@@ -1,0 +1,41 @@
+name: process_collection_collection1
+on: workflow_dispatch
+permissions:
+  contents: write
+
+
+jobs:
+  processcollection:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - name: PDF fix
+        run: sudo mv /etc/ImageMagick-6/policy.xml /etc/ImageMagick-6/policy.xml.off && sudo apt-get update && sudo apt-get install -y ghostscript-x
+      - name: install
+        run: gem install bundler && bundle
+      - name: derivatives
+        run: bundle exec rake wax:derivatives:iiif collection1
+      - name: pages
+        run: bundle exec rake wax:pages collection1
+      - name: search
+        run: bundle exec rake wax:search main
+      - name: update exhibit
+        continue-on-error: true
+        run: |
+          rm pages/collection.md && touch pages/collection.md && echo -e "---\nlayout: page\ntitle: Browse the Collection\npermalink: /collection/\n---\n{% include collection_gallery.html collection='collection1' facet_by='object_type' %}" >> pages/collection.md
+      - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "process wax collection collection1" -a || echo "No changes to commit"
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main  
