@@ -1,0 +1,68 @@
+---
+---
+{
+  "@context": "https://iiif.io/api/presentation/2/context.json",
+  "@id": "https://dnoneill.github.io/walkthrough-wax/manifests/storiiies.cogapp.com/qdl-or4946/manifest.json",
+  "@type": "sc:Manifest",
+  "label": {
+    "@value": "A Book's 700 Year Journey.",
+    "@language": "en"
+  },
+  "metadata": [
+    {
+      "label": "author",
+      "value": "Bink Hallum, British Library and Cogapp"
+    }
+  ],
+  "description": {
+    "@value": "Exploring the title page of The Canon of Medicine by Ab\u016b 'Al\u012b al-\u1e24usayn ibn 'Abd All\u0101h known as Ibn S\u012bn\u0101.",
+    "@language": "en"
+  },
+  "viewingHint": "paged",
+  "viewingDirection": "left-to-right",
+  "attribution": "British Library/Qatar Digital Library. Public Domain.",
+  "sequences": [
+    {
+      "@type": "sc:Sequence",
+      "canvases": [
+        {
+          "@context": "https://iiif.io/api/presentation/2/context.json",
+          "@type": "sc:Canvas",
+          "width": 4336,
+          "height": 6343,
+          "@id": "https://storiies.cogapp.com/Or_4946_1r/canvas/c0",
+          "label": {
+            "@value": "A Book's 700 Year Journey.\n\nExploring the title page of The Canon of Medicine by Ab\u016b 'Al\u012b al-\u1e24usayn ibn 'Abd All\u0101h known as Ibn S\u012bn\u0101.\n\nA collaboration between Bink Hallum, The British Library and Cogapp.\n\nBritish Library/Qatar Digital Library, Or. 4946 [1r].\nPublic Domain.",
+            "@language": "en"
+          },
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "@id": "https://storiies.cogapp.com/Or_4946_1r/image/i0",
+              "motivation": "sc:painting",
+              "on": "https://storiies.cogapp.com/Or_4946_1r/canvas/c0",
+              "resource": {
+                "@id": "https://iiif.qdl.qa/iiif/images/81055/vdc_100041536079.0x000001/Or%204946_00011.jp2",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "width": 4336,
+                "height": 6343,
+                "service": {
+                  "@context": "https://iiif.io/api/image/2/context.json",
+                  "profile": "https://iiif.io/api/image/1/level2.json",
+                  "@id": "https://iiif.qdl.qa/iiif/images/81055/vdc_100041536079.0x000001/Or%204946_00011.jp2"
+                }
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "https://storiiies.cogapp.com/qdl-or4946/annotations.json",
+              "@type": "sc:AnnotationList"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
