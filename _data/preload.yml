@@ -1,6 +1,4 @@
 images:
-- ''
-manifests:
 - thumbnail: ''
   title: ''
   url: https://dnoneill.github.io/wax-iiif/img/derivatives/iiif/fullBayeux/manifest.json
@@ -35,4 +33,4 @@ settings:
   tempuser: notenabled
   viewer: mirador
   widgets: comment-with-purpose, tag, geotagging
-version: '2.3'
+version: '2.0'
